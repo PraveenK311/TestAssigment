@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <title>DO's and DONT's</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="wholecontent">
+        <div class="header">
+            <h1>Choose the do's and dont's to complete the following questions</h1><br><br>
+        </div><br>
+        <div class="maincontent">
+            <ul>
+                <li>
+                    <input type='checkbox' class='chk' value='1'>
+                    <h4>a/<b>do</b>
+                        <p>/does/</p>yo can come from Doha</h4>
+                </li><br>
+                <li>
+                    <input type='checkbox' class='chk' value='2'>
+                    <h4>b/<b>do</b>
+                        <p>/does/</p>I Need the Better Results</h4>
+                </li><br>
+                <li>
+                    <input type='checkbox' class='chk' value='3'>
+                    <h4>c/
+                        <p>/do/</p><b>does</b>/Your brother Live at Home</h4>
+                </li><br>
+                <li>
+                    <input type='checkbox' class='chk' value='4'>
+                    <h4>d/<b>do</b>
+                        <p>/does/</p>your friends meetup Often</h4>
+                </li><br>
+                <li>
+                    <input type='checkbox' class='chk' value='5'>
+                    <h4>e/
+                        <p>/do/</p><b>does</b>/natalia Walk to work </h4>
+                </li><br>
+                <li>
+                    <input type='checkbox' class='chk' value='6'>
+                    <h4>f/<b>do</b>
+                        <p>/does/</p>we choose our each module at end of the term</h4>
+                </li>
+            </ul>
+
+        </div>
+        <br>
+        <div class="footer">
+            <div id="submitbutton">
+                <button onclick="myFunction()">Submit</button>
+
+            </div>
+            <div id="checkansbtn">
+                <button onclick="myFunction1()">check Answers</button>
+
+            </div>
+            <div id="showansbtn">
+                <button onclick="myFunction2()">Show Answers</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+
+
+</body>
+
+<script>
+    document.getElementById('submitbutton').onclick = function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        alert(checkboxes.length);
+    }
+
+    document.getElementById('checkansbtn').onclick = function() {
+        var checkboxes1 = document.querySelectorAll('input[type="checkbox"]:checked');
+        alert(checkboxes1.length);
+    }
+
+    document.getElementById('showansbtn').onclick = function() {
+        var checkboxes2 = document.querySelectorAll('input[type="checkbox"]:checked');
+        alert(checkboxes2.length);
+    }
+</script>
+
+<!-- <script src="F:\luminaDatamatics test\test.js"></script> -->
+
+</html>
